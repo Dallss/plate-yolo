@@ -3,14 +3,14 @@ from pathlib import Path
 from ultralytics import YOLO
 
 # Path to test images folder
-test_folder = Path("test/images")
+test_folder = Path("detect-plate/test/images")
 
 # Pick a random image
 test_image = random.choice(list(test_folder.glob("*.*")))  # matches any file
 print(f"Using image: {test_image}")
 
 # Load trained model
-model = YOLO("runs/detect/train/weights/best.pt")
+model = YOLO("detect-plate/runs/detect/train/weights/best.pt")
 
 # Run prediction
 results = model.predict(source=str(test_image), conf=0.05)  # lower threshold if needed
