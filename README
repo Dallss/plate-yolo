@@ -1,0 +1,5 @@
+Our school still uses stickers on vehicles as a gatepass. Something that is very old fashioned and unfashionable for vehicles. But more importantly, can be a security issue. 
+
+If there was a way to allow the campus cctv pointed at the gate to check if the car is allowed to enter the campus or not.
+
+There is! a simple database check, and image-processing/ computer vision should solve this
